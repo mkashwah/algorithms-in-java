@@ -30,12 +30,18 @@ public class fibonacci {
         int sum = 0;
         int fib0 = 0;
         int fib1 = 1;
-        for (int i = 0 ; i < num-1 ; i++){
-            sum = fib0 + fib1;
-            fib0 = fib1;
-            fib1 = sum;
+        if (num == 0){
+            return fib0;
+        } else if (num == 1){
+            return fib1;
+        }else {
+            for (int i = 0; i <= num - 2; i++) {
+                sum = fib0 + fib1;
+                fib0 = fib1;
+                fib1 = sum;
+            }
+            return sum;
         }
-        return sum;
     }
 
 }
