@@ -11,7 +11,11 @@ public class recursion {
 
         //testing Fibonacci using recursion
         fibonacci fib = new fibonacci();
-        int fibRecursive = fib.fibonacciRecursive(6);
+        int fibRecursive = fib.fibonacciRecursive(7);
         System.out.println("Fibonacci at 6 using recursion = " + fibRecursive);
+
+        //testing Fibonacci using iteration
+        int fibIterative = fib.fibonacciIterative(7);
+        System.out.println("Fibonacci at 6 using iteration = " + fibIterative);
     }
 }

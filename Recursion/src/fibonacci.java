@@ -21,4 +21,21 @@ public class fibonacci {
         }
     }
 
+    /**
+     * This method finds Fibonacci number at index num using iterations
+     * @param num positive integer equals to index of a Fibonacci entry
+     * @return Fibonacci at index num
+     */
+    public int fibonacciIterative(int num){
+        int sum = 0;
+        int fib0 = 0;
+        int fib1 = 1;
+        for (int i = 0 ; i < num-1 ; i++){
+            sum = fib0 + fib1;
+            fib0 = fib1;
+            fib1 = sum;
+        }
+        return sum;
+    }
+
 }
