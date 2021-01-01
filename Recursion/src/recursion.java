@@ -17,5 +17,13 @@ public class recursion {
         //testing Fibonacci using iteration
         int fibIterative = fib.fibonacciIterative(6);
         System.out.println("Fibonacci at 6 using iteration = " + fibIterative);
+
+
+        //testing reverseString
+        reverseString reverser = new reverseString();
+        String testString = "Recursion is painful";
+        System.out.println(reverser.reverse(testString));
+
+
     }
 }
